@@ -24,7 +24,7 @@ class LineLabel:
 #-----Root-----
 
 root = Tk()
-root.geometry('324x142')
+root.geometry('324x342')
 root.resizable(False,False)
 root.title('DnD Монетный Конвернер')
 
@@ -41,6 +41,11 @@ t = [Label(),Label(),Label(),Label(),Label(),]
 rope = Button(text='Сброс')
 start = Button(text='Посчитать')
 
+#--Other--
+
+kg = Entry()
+funt = Entry()
+
 #-----Place-----
 
 wh = 0
@@ -54,6 +59,8 @@ while wh != len(m):
     wh += 1
 start.place(x=2,y=122,width=size[0]*2+size[1],height=18)
 rope.place(x=2,y=102,width=size[0]*2+size[1],height=18)
+kg.place(x=2,y=18*8, width=size[0],height=18)
+funt.place(x=size[0]+2+size[1],y=18*8, width=size[0],height=18)
 
 #-----Def-----
 
