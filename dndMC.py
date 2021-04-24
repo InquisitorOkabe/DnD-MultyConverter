@@ -1,3 +1,4 @@
+#-----Import-----
 from tkinter import *
 class LineFrame:
     def __init__(self,core,lbg='gray25',bg='SystemButtonFace'):
@@ -20,10 +21,17 @@ class LineLabel:
     def bind(self,event,function):
         self.line.bind(event,function)
 
+#-----Root-----
+
 root = Tk()
 root.geometry('324x142')
 root.resizable(False,False)
 root.title('DnD Монетный Конвернер')
+
+#-----Variable-----
+
+#--Money--
+
 size = [120, 80] # 0 - width
 money = [1, 10, 50, 100, 1000]
 tx = ['медь(мм)', 'серебро(см)','электрум(эм)','золото(зм)','платина(пм)']
@@ -32,6 +40,8 @@ l = [LineLabel(root),LineLabel(root),LineLabel(root),LineLabel(root),LineLabel(r
 t = [Label(),Label(),Label(),Label(),Label(),]
 rope = Button(text='Сброс')
 start = Button(text='Посчитать')
+
+#-----Place-----
 
 wh = 0
 while wh != len(m):
@@ -44,6 +54,8 @@ while wh != len(m):
     wh += 1
 start.place(x=2,y=122,width=size[0]*2+size[1],height=18)
 rope.place(x=2,y=102,width=size[0]*2+size[1],height=18)
+
+#-----Def-----
 
 def calc():
     my = [0,0,0,0,0]
@@ -74,10 +86,15 @@ def nope():
         l[wh].label.config(text='')
         wh += 1
 
+#-----Bind-----
+
 root.bind('<Escape>', lambda x: exit())
 root.bind('<Return>', lambda x: calc())
 start.bind('<1>', lambda x: calc())
 rope.bind('<1>', lambda x: nope())
+
+#-----Skript-----
 m[0].focus_set()
 
+#-----End-----
 root.mainloop()
