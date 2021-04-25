@@ -1,6 +1,6 @@
 from PySide2 import QtCore, QtGui, QtWidgets
 import sys
-from ui import Ui_Form
+from ui_Qt import Ui_Form
 
 app = QtWidgets.QApplication(sys.argv)
 Form = QtWidgets.QWidget()
