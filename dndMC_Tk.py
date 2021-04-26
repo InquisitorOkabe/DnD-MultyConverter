@@ -52,17 +52,25 @@ def run(r):
         ui.label_pm.label['text'] = str(money/1000)
     # Подсчёт левой кнопки.
     elif r == 1:
-        clear(ui.entry_ft, str("{0:.2f}".format(float(ui.entry_m.get())*3.28)))
+        # Метры в футы.
         clear(ui.entry_ft, str("{0:.2f}".format(float(ui.entry_m.get())*3.28))) #3.28
+        # Километры в мили.
         clear(ui.entry_mi, str("{0:.2f}".format(float(ui.entry_km.get())*0.62))) #0.62
+        # Сантиметры в люймы.
         clear(ui.entry_in, str("{0:.2f}".format(float(ui.entry_sm.get())*0.39))) #0.39
+        # Килограммы в фунты.
         clear(ui.entry_lb, str("{0:.2f}".format(float(ui.entry_kg.get())*2.20))) #2.20
     # Подсчёт правой кнопки.
     elif r == 2:
+        # Футы в метры.
         clear(ui.entry_m, str("{0:.2f}".format(float(ui.entry_ft.get())*0.30))) #0.30
+        # Мили в километры.
         clear(ui.entry_km, str("{0:.2f}".format(float(ui.entry_mi.get())*1.60))) #1.60
+        # Дюймы в сатниметры.
         clear(ui.entry_sm, str("{0:.2f}".format(float(ui.entry_in.get())*2.54))) #2.54
+        # Фунты в килограммы.
         clear(ui.entry_kg, str("{0:.2f}".format(float(ui.entry_lb.get())*0.45))) #0.45
+        #
 
 # Бинды.
 reset(0)
