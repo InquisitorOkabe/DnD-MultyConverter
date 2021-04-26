@@ -229,7 +229,7 @@
      <enum>QFrame::Box</enum>
     </property>
     <property name="text">
-     <string>серебро (см)</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;серебро &lt;span style=&quot; font-weight:600;&quot;&gt;(см)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -248,7 +248,7 @@
      <enum>QFrame::Box</enum>
     </property>
     <property name="text">
-     <string>платина (пм)</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;платина &lt;span style=&quot; font-weight:600;&quot;&gt;(пм)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -267,7 +267,7 @@
      <enum>QFrame::Box</enum>
     </property>
     <property name="text">
-     <string>медь (мм)</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;медь &lt;span style=&quot; font-weight:600;&quot;&gt;(мм)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -286,7 +286,7 @@
      <enum>QFrame::Box</enum>
     </property>
     <property name="text">
-     <string>золото (зм)</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;золото &lt;span style=&quot; font-weight:600;&quot;&gt;(зм)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -305,7 +305,7 @@
      <enum>QFrame::Box</enum>
     </property>
     <property name="text">
-     <string>электрум (эм)</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;электрум &lt;span style=&quot; font-weight:600;&quot;&gt;(эм)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -317,7 +317,7 @@
     <rect>
      <x>10</x>
      <y>170</y>
-     <width>341</width>
+     <width>347</width>
      <height>141</height>
     </rect>
    </property>
@@ -327,7 +327,7 @@
    <widget class="QLineEdit" name="entry_km">
     <property name="geometry">
      <rect>
-      <x>91</x>
+      <x>95</x>
       <y>40</y>
       <width>80</width>
       <height>20</height>
@@ -342,7 +342,7 @@
      <rect>
       <x>10</x>
       <y>40</y>
-      <width>80</width>
+      <width>84</width>
       <height>20</height>
      </rect>
     </property>
@@ -350,7 +350,7 @@
      <enum>QFrame::Box</enum>
     </property>
     <property name="text">
-     <string>(км) километр</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;(км)&lt;/span&gt; километр&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -359,22 +359,22 @@
    <widget class="QLineEdit" name="entry_mi">
     <property name="geometry">
      <rect>
-      <x>172</x>
+      <x>176</x>
       <y>40</y>
       <width>80</width>
       <height>20</height>
      </rect>
     </property>
     <property name="text">
-     <string>0.62</string>
+     <string>0</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_15">
     <property name="geometry">
      <rect>
-      <x>253</x>
+      <x>257</x>
       <y>40</y>
-      <width>80</width>
+      <width>84</width>
       <height>20</height>
      </rect>
     </property>
@@ -382,7 +382,7 @@
      <enum>QFrame::Box</enum>
     </property>
     <property name="text">
-     <string>миля (mi)</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;миля &lt;span style=&quot; font-weight:600;&quot;&gt;(mi)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -391,7 +391,7 @@
    <widget class="QLineEdit" name="entry_sm">
     <property name="geometry">
      <rect>
-      <x>91</x>
+      <x>95</x>
       <y>61</y>
       <width>80</width>
       <height>20</height>
@@ -404,9 +404,9 @@
    <widget class="QLabel" name="label_16">
     <property name="geometry">
      <rect>
-      <x>253</x>
+      <x>257</x>
       <y>61</y>
-      <width>80</width>
+      <width>84</width>
       <height>20</height>
      </rect>
     </property>
@@ -414,7 +414,7 @@
      <enum>QFrame::Box</enum>
     </property>
     <property name="text">
-     <string>дюйм (in)</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;дюйм &lt;span style=&quot; font-weight:600;&quot;&gt;(in)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -423,14 +423,14 @@
    <widget class="QLineEdit" name="entry_in">
     <property name="geometry">
      <rect>
-      <x>172</x>
+      <x>176</x>
       <y>61</y>
       <width>80</width>
       <height>20</height>
      </rect>
     </property>
     <property name="text">
-     <string>0.39</string>
+     <string>0</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_17">
@@ -438,7 +438,7 @@
      <rect>
       <x>10</x>
       <y>61</y>
-      <width>80</width>
+      <width>84</width>
       <height>20</height>
      </rect>
     </property>
@@ -446,7 +446,7 @@
      <enum>QFrame::Box</enum>
     </property>
     <property name="text">
-     <string>(см) сантиметр</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;(см)&lt;/span&gt; сантиметр&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -455,7 +455,7 @@
    <widget class="QLineEdit" name="entry_kg">
     <property name="geometry">
      <rect>
-      <x>91</x>
+      <x>95</x>
       <y>82</y>
       <width>80</width>
       <height>20</height>
@@ -468,9 +468,9 @@
    <widget class="QLabel" name="label_18">
     <property name="geometry">
      <rect>
-      <x>253</x>
+      <x>257</x>
       <y>82</y>
-      <width>80</width>
+      <width>84</width>
       <height>20</height>
      </rect>
     </property>
@@ -478,7 +478,7 @@
      <enum>QFrame::Box</enum>
     </property>
     <property name="text">
-     <string>фунт (lb)</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;фунт &lt;span style=&quot; font-weight:600;&quot;&gt;(lb)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -487,14 +487,14 @@
    <widget class="QLineEdit" name="entry_lb">
     <property name="geometry">
      <rect>
-      <x>172</x>
+      <x>176</x>
       <y>82</y>
       <width>80</width>
       <height>20</height>
      </rect>
     </property>
     <property name="text">
-     <string>2.20</string>
+     <string>0</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_19">
@@ -502,7 +502,7 @@
      <rect>
       <x>10</x>
       <y>82</y>
-      <width>80</width>
+      <width>84</width>
       <height>20</height>
      </rect>
     </property>
@@ -510,7 +510,7 @@
      <enum>QFrame::Box</enum>
     </property>
     <property name="text">
-     <string>(кг) килограмм</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;(кг)&lt;/span&gt; килограмм&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -536,7 +536,7 @@
    <widget class="QPushButton" name="left_other">
     <property name="geometry">
      <rect>
-      <x>94</x>
+      <x>98</x>
       <y>110</y>
       <width>75</width>
       <height>23</height>
@@ -549,7 +549,7 @@
    <widget class="QPushButton" name="right_other">
     <property name="geometry">
      <rect>
-      <x>175</x>
+      <x>179</x>
       <y>110</y>
       <width>75</width>
       <height>23</height>
@@ -562,7 +562,7 @@
    <widget class="QLineEdit" name="entry_m">
     <property name="geometry">
      <rect>
-      <x>91</x>
+      <x>95</x>
       <y>19</y>
       <width>80</width>
       <height>20</height>
@@ -575,9 +575,9 @@
    <widget class="QLabel" name="label_20">
     <property name="geometry">
      <rect>
-      <x>253</x>
+      <x>257</x>
       <y>19</y>
-      <width>80</width>
+      <width>84</width>
       <height>20</height>
      </rect>
     </property>
@@ -585,7 +585,7 @@
      <enum>QFrame::Box</enum>
     </property>
     <property name="text">
-     <string>фут (ft)</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;фут &lt;span style=&quot; font-weight:600;&quot;&gt;(ft)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -594,14 +594,14 @@
    <widget class="QLineEdit" name="entry_ft">
     <property name="geometry">
      <rect>
-      <x>172</x>
+      <x>176</x>
       <y>19</y>
       <width>80</width>
       <height>20</height>
      </rect>
     </property>
     <property name="text">
-     <string>3.28</string>
+     <string>0</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_21">
@@ -609,7 +609,7 @@
      <rect>
       <x>10</x>
       <y>19</y>
-      <width>80</width>
+      <width>84</width>
       <height>20</height>
      </rect>
     </property>
@@ -617,7 +617,7 @@
      <enum>QFrame::Box</enum>
     </property>
     <property name="text">
-     <string>(м) метр</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;(м)&lt;/span&gt; метр&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
