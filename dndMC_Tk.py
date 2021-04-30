@@ -4,6 +4,14 @@ from ui_Tk import Ui_Form
 
 ui = Ui_Form()
 
+c2 = {
+      # Множители: Фут = метров, метр = футов
+     'ft_m':[0.3048, 3.28083989501],
+     'mi_km':[1.609344, 0.62137119224],
+     'in_sm':[0.3937007874, 2.54],
+     'lb_kg':[0.37324, 2.67923]
+}
+
 # Кнопка "Сброс"
 def clear(tar, text):
     tar.delete('0', 'end')
@@ -53,23 +61,23 @@ def run(r):
     # Подсчёт левой кнопки.
     elif r == 1:
         # Метры в футы.
-        clear(ui.entry_ft, str("{0:.2f}".format(float(ui.entry_m.get())*3.28))) #3.28
+        clear(ui.entry_ft, str("{0:.2f}".format(float(ui.entry_m.get())*c2['ft_m'][1]))) #3.28
         # Километры в мили.
-        clear(ui.entry_mi, str("{0:.2f}".format(float(ui.entry_km.get())*0.62))) #0.62
+        clear(ui.entry_mi, str("{0:.2f}".format(float(ui.entry_km.get())*c2['mi_km'][1]))) #0.62
         # Сантиметры в люймы.
-        clear(ui.entry_in, str("{0:.2f}".format(float(ui.entry_sm.get())*0.39))) #0.39
+        clear(ui.entry_in, str("{0:.2f}".format(float(ui.entry_sm.get())*c2['in_sm'][1]))) #0.39
         # Килограммы в фунты.
-        clear(ui.entry_lb, str("{0:.2f}".format(float(ui.entry_kg.get())*2.20))) #2.20
+        clear(ui.entry_lb, str("{0:.2f}".format(float(ui.entry_kg.get())*c2['lb_kg'][1]))) #2.20
     # Подсчёт правой кнопки.
     elif r == 2:
         # Футы в метры.
-        clear(ui.entry_m, str("{0:.2f}".format(float(ui.entry_ft.get())*0.30))) #0.30
+        clear(ui.entry_m, str("{0:.2f}".format(float(ui.entry_ft.get())*c2['ft_m'][0]))) #0.30
         # Мили в километры.
-        clear(ui.entry_km, str("{0:.2f}".format(float(ui.entry_mi.get())*1.60))) #1.60
+        clear(ui.entry_km, str("{0:.2f}".format(float(ui.entry_mi.get())*c2['mi_km'][0]))) #1.60
         # Дюймы в сатниметры.
-        clear(ui.entry_sm, str("{0:.2f}".format(float(ui.entry_in.get())*2.54))) #2.54
+        clear(ui.entry_sm, str("{0:.2f}".format(float(ui.entry_in.get())*c2['in_sm'][0]))) #2.54
         # Фунты в килограммы.
-        clear(ui.entry_kg, str("{0:.2f}".format(float(ui.entry_lb.get())*0.45))) #0.45
+        clear(ui.entry_kg, str("{0:.2f}".format(float(ui.entry_lb.get())*c2['lb_kg'][0]))) #0.45
         #
 
 # Бинды.
