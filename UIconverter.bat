@@ -1,2 +1,2 @@
 @ echo on
-pyside-uic "untitled.ui" -x -o "ui_Qt.py"
+pyside-uic "untitled.ui" -x -o "pkgs\ui_Qt.py"
